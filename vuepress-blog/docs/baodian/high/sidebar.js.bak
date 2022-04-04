@@ -1,0 +1,11 @@
+module.exports =[ 
+   
+            {
+                  title:'¸ß¼¶±¦µä',
+                  collapsable: true,
+                  children:[
+                    '/baodian/high/notes/one',
+                  ]
+                }
+            	
+]

@@ -1,0 +1,11 @@
+module.exports =[ 
+   
+            {
+                  title:'³õ¼¶±¦µä',
+                  collapsable: true,
+                  children:[
+                    '/baodian/zero/notes/one',
+                  ]
+                }
+            	
+]
