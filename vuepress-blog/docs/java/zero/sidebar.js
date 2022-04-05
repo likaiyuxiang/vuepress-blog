@@ -1,10 +1,10 @@
 module.exports =[ 
    
             {
-                  title:'³õ¼¶±¦µä',
+                  title:'åˆçº§å®å…¸',
                   collapsable: true,
                   children:[
-                    '/baodian/zero/notes/one',
+                    '/java/zero/notes/one',
                   ]
                 }
             	

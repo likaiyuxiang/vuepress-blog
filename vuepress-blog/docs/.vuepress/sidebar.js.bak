@@ -1,0 +1,6 @@
+module.exports = {
+	'/guide/': require('../guide/sidebar'),
+
+	'/baodian/zero': require('../java/zero/sidebar'),
+	'/baodian/high': require('../java/high/sidebar'),
+}	
