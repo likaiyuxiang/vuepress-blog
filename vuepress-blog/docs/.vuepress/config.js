@@ -1,6 +1,6 @@
 module.exports = {
-    title: '知码学院',
-    description: '君哥带你上王者',
+    title: '雨巷',
+    description: '如逆旅，似行人',
     dest: './dist',
     port: '7777',
     head: [

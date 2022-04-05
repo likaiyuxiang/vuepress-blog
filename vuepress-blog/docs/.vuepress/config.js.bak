@@ -4,7 +4,7 @@ module.exports = {
     dest: './dist',
     port: '7777',
     head: [
-        ['link', {rel: 'icon', href: '/logo.jpg'}]
+        ['link', {rel: 'icon', href: '/image/logo.jpg'}]
     ],
     markdown: {
         lineNumbers: true
