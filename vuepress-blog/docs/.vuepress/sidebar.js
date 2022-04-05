@@ -1,6 +1,6 @@
 module.exports = {
-	'/guide/': require('../guide/sidebar'),
-
-	'/baodian/zero': require('../baodian/zero/sidebar'),
-	'/baodian/high': require('../baodian/high/sidebar'),
+	'/guide/git': require('../guide/git/sidebar'),
+	'/guide/vuepress': require('../guide/vuepress/sidebar'),
+	'/baodian/zero': require('../java/zero/sidebar'),
+	'/baodian/high': require('../java/high/sidebar'),
 }	

@@ -1,34 +1,38 @@
 module.exports = [
     {
-        text: 'ãÂ±ÆÖ¸ÄÏ', link: '/guide/'
-    },
-    {
-        text: 'ÃæÊÔ±¦µä', link: '/baodian/',
-		items: [
-            {text: '³õ¼¶¿ª·¢Æª', link: '/baodian/zero/'},
-            {text: 'ÖĞ¸ß½ø½×Æª', link: '/baodian/high/'},
+        text: 'æ‡µé€¼æŒ‡å—', link: '/guide/'ï¼Œ
+			items: [
+            {text: 'gitå‘½ä»¤', link: '/guide/git/'},
+            {text: 'vuepressæ­å»º', link: '/guide/vuepress/'},
         ]
     },
     {
-        text: '¹¤¾ßÏä',
+        text: 'javaçŸ¥è¯†', link: '/java/',
+		items: [
+            {text: 'åˆçº§å¼€å‘ç¯‡', link: '/java/zero/'},
+            {text: 'ä¸­é«˜è¿›é˜¶ç¯‡', link: '/java/high/'},
+        ]
+    },
+    {
+        text: 'å·¥å…·ç®±',
         items: [
 			{
-                text: 'ÔÚÏß±à¼­',
+                text: 'åœ¨çº¿ç¼–è¾‘',
 				items: [
-					{text: 'Í¼Æ¬Ñ¹Ëõ', link: 'https://tinypng.com/'}
+					{text: 'å›¾ç‰‡å‹ç¼©', link: 'https://tinypng.com/'}
 				]
             },
 			{
-                text: 'ÔÚÏß·şÎñ',
+                text: 'åœ¨çº¿æœåŠ¡',
 				items: [
-					{text: '°¢ÀïÔÆ', link: 'https://www.aliyun.com/'},
-					{text: 'ÌÚÑ¶ÔÆ', link: 'https://cloud.tencent.com/'}
+					{text: 'é˜¿é‡Œäº‘', link: 'https://www.aliyun.com/'},
+					{text: 'è…¾è®¯äº‘', link: 'https://cloud.tencent.com/'}
 				]
             },
 			{
-                text: '²©¿ÍÖ¸ÄÏ',
+                text: 'åšå®¢æŒ‡å—',
 				items: [
-					{text: '¾ò½ğ', link: 'https://juejin.im/'},
+					{text: 'æ˜é‡‘', link: 'https://juejin.im/'},
 					{text: 'CSDN', link: 'https://blog.csdn.net/'}
 				]
             }
