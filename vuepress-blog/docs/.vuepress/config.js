@@ -12,7 +12,7 @@ module.exports = {
     themeConfig: {
         nav: require("./nav.js"),
         sidebar: require("./sidebar.js"),
-        sidebarDepth: 2,
+        sidebarDepth: 10,
         lastUpdated: 'Last Updated',
         searchMaxSuggestoins: 10,
         serviceWorker: {
