@@ -1,7 +1,11 @@
-# 一级标题
+# git
 
-one.md
+## git工作区
 
-## 二级标题
+git主要可以分为4个工作区
 
-### 三级标题
+## git常用基础命令
+
+`git init`初始化一个git仓库
+
+`git clone`clone一个git仓库
