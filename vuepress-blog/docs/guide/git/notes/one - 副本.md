@@ -7,7 +7,7 @@
 
 可以分为4个区域
 
-![git4](../../../.vuepress/public/image/gitFourArea.png)
+![image-20220407200908129](..\..\..\.vuepress\public\image\git四个区域.png)
 
 - workspace : 工作区
 - staging area：暂存区/缓存区
@@ -58,4 +58,3 @@ git fetch // 从远程获取代码库
 git pull // 下载远程代码并合并
 git push // 上传远程代码并合并
 ```
-
