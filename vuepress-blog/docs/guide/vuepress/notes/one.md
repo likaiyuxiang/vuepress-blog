@@ -13,7 +13,7 @@ vuepress-blog
 
 ```
 
-# 首页
+## 首页
 
 首页是通过docs文件下的readme.md文件进行配置
 
@@ -29,7 +29,7 @@ features:
   details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
 - title: 高性能
   details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: MIT Licensed | Copyright © likaiyuxiang //角标
 
 ```
 
@@ -69,7 +69,7 @@ module.exports = {
 
 网站标题、描述、主题等信息
 
-# 导航栏设置
+## 导航栏设置
 
 从上可以看到导航栏使用 **`./nav.js` **配置，其位置在/docs/.vuepress
 
@@ -128,5 +128,22 @@ guide
 │─── README.md //相当于vuepress这篇笔记的首页
 │─── sidebar.js //侧边栏导航
 
+```
+
+`package.json`的配置
+
+```json
+{
+  "name": "vuepress-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs"  //这样npm run dev 就可以启动vuepress dev docs了
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
 ```
 
