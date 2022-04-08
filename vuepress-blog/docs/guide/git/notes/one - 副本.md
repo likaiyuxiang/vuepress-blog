@@ -7,7 +7,7 @@
 
 可以分为4个区域
 
-![git4](../../../.vuepress/public/image/gitFourArea.png)
+![image-20220407200908129](..\..\..\.vuepress\public\image\git四个区域.png)
 
 - workspace : 工作区
 - staging area：暂存区/缓存区
@@ -46,7 +46,7 @@ git checkout (branchname) // 切换分支
 当你切换分支的时候，Git 会用该分支的最后提交的快照替换你的工作目录的内容， 所以多个分支不需要多个目录。
 
 git merge // 合并分支
-git branch -d (branchname)  //删除分支
+
 ```
 
 
@@ -58,4 +58,3 @@ git fetch // 从远程获取代码库
 git pull // 下载远程代码并合并
 git push // 上传远程代码并合并
 ```
-
