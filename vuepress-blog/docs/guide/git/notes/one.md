@@ -164,7 +164,11 @@ git merge FETCH_HEAD    //将拉取下来的最新内容合并到当前所在的
 git pull <远程主机名> <远程分支名>:<本地分支名>
 ```
 
+如果远程分支是与当前分支合并，则冒号后面的部分可以省略：
 
+```ruby
+git pull origin next
+```
 
 
 
