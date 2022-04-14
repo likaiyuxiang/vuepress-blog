@@ -1,8 +1,9 @@
 module.exports = {
-    title: '知码学院',
-    description: '君哥带你上王者',
+    title: '雨巷',
+    description: '如逆旅，似行人',
     dest: './dist',
     port: '7777',
+	palette: path.resolve(__dirname,'./styles','palette.styl'), //palette.style就是styles里边的文件，此文件就是写的自定义主题样式
     head: [
         ['link', {rel: 'icon', href: '/image/logo.jpg'}]
     ],
@@ -12,7 +13,7 @@ module.exports = {
     themeConfig: {
         nav: require("./nav.js"),
         sidebar: require("./sidebar.js"),
-        sidebarDepth: 2,
+        sidebarDepth: 10,
         lastUpdated: 'Last Updated',
         searchMaxSuggestoins: 10,
         serviceWorker: {

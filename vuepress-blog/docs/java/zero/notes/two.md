@@ -97,3 +97,155 @@ flag = true;          //语句2
 ## JAVA是怎么解决并发问题的: JMM(Java内存模型)
 
 Java 内存模型是个很复杂的规范，强烈推荐你看后续（应该是网上能找到最好的材料之一了）：[Java 内存模型详解](https://pdai.tech/md/java/jvm/java-jvm-jmm.html)。
+
+**理解的第一个维度：核心知识点**
+
+JMM本质上可以理解为，Java 内存模型规范了 JVM 如何提供按需禁用缓存和编译优化的方法。具体来说，这些方法包括：
+
+- volatile、synchronized 和 final 三个关键字
+- Happens-Before 规则
+
+**理解的第二个维度：可见性，有序性，原子性**
+
+- 原子性
+
+在Java中，对基本数据类型的变量的读取和赋值操作是原子性操作，即这些操作是不可被中断的，要么执行，要么不执行。 请分析以下哪些操作是原子性操作：
+
+```java
+x = 10;        //语句1: 直接将数值10赋值给x，也就是说线程执行这个语句的会直接将数值10写入到工作内存中
+y = x;         //语句2: 包含2个操作，它先要去读取x的值，再将x的值写入工作内存，虽然读取x的值以及 将x的值写入工作内存 这2个操作都是原子性操作，但是合起来就不是原子性操作了。
+x++;           //语句3： x++包括3个操作：读取x的值，进行加1操作，写入新的值。
+x = x + 1;     //语句4： 同语句3    
+```
+
+上面4个语句只有语句1的操作具备原子性。
+
+也就是说，只有简单的读取、赋值（而且必须是将数字赋值给某个变量，变量之间的相互赋值不是原子操作）才是原子操作。
+
+::: tip
+
+从上面可以看出，Java内存模型只保证了基本读取和赋值是原子性操作，如果要实现更大范围操作的原子性，可以通过synchronized和Lock来实现。由于synchronized和Lock能够保证任一时刻只有一个线程执行该代码块，那么自然就不存在原子性问题了，从而保证了原子性。
+
+:::
+
+- 可见性
+
+Java提供了volatile关键字来保证可见性。
+
+当一个共享变量被volatile修饰时，它会保证修改的值会立即被更新到主存，当有其他线程需要读取时，它会去内存中读取新值。
+
+而普通的共享变量不能保证可见性，因为普通共享变量被修改之后，什么时候被写入主存是不确定的，当其他线程去读取时，此时内存中可能还是原来的旧值，因此无法保证可见性。
+
+::: tip
+
+另外，通过synchronized和Lock也能够保证可见性，synchronized和Lock能保证同一时刻只有一个线程获取锁然后执行同步代码，并且在释放锁之前会将对变量的修改刷新到主存当中。因此可以保证可见性。
+
+:::
+
+- 有序性
+
+在Java里面，可以通过volatile关键字来保证一定的“有序性”（具体原理在下一节讲述）。另外可以通过synchronized和Lock来保证有序性，很显然，synchronized和Lock保证每个时刻是有一个线程执行同步代码，相当于是让线程顺序执行同步代码，自然就保证了有序性。当然JMM是通过Happens-Before 规则来保证有序性的。
+
+## 线程安全的实现方法
+
+### 1. 互斥同步
+
+synchronized 和 ReentrantLock。
+
+### 2. 非阻塞同步
+
+互斥同步最主要的问题就是线程阻塞和唤醒所带来的性能问题，因此这种同步也称为阻塞同步。
+
+互斥同步属于一种悲观的并发策略，总是认为只要不去做正确的同步措施，那就肯定会出现问题。无论共享数据是否真的会出现竞争，它都要进行加锁(这里讨论的是概念模型，实际上虚拟机会优化掉很大一部分不必要的加锁)、用户态核心态转换、维护锁计数器和检查是否有被阻塞的线程需要唤醒等操作。
+
+**(一)CAS**
+
+随着硬件指令集的发展，我们可以使用基于冲突检测的乐观并发策略: 先进行操作，如果没有其它线程争用共享数据，那操作就成功了，否则采取补偿措施(不断地重试，直到成功为止)。这种乐观的并发策略的许多实现都不需要将线程阻塞，因此这种同步操作称为非阻塞同步。
+
+乐观锁需要操作和冲突检测这两个步骤具备原子性，这里就不能再使用互斥同步来保证了，只能靠硬件来完成。硬件支持的原子性操作最典型的是: 比较并交换(Compare-and-Swap，CAS)。CAS 指令需要有 3 个操作数，分别是内存地址 V、旧的预期值 A 和新值 B。当执行操作时，只有当 V 的值等于 A，才将 V 的值更新为 B。
+
+**(二)AtomicInteger**
+
+J.U.C 包里面的整数原子类 AtomicInteger，其中的 compareAndSet() 和 getAndIncrement() 等方法都使用了 Unsafe 类的 CAS 操作。
+
+以下代码使用了 AtomicInteger 执行了自增的操作。
+
+```java
+private AtomicInteger cnt = new AtomicInteger();
+
+public void add() {
+    cnt.incrementAndGet();
+}    
+```
+
+以下代码是 incrementAndGet() 的源码，它调用了 unsafe 的 getAndAddInt() 。
+
+```java
+public final int incrementAndGet() {
+    return unsafe.getAndAddInt(this, valueOffset, 1) + 1;
+}  
+```
+
+以下代码是 getAndAddInt() 源码，var1 指示对象内存地址，var2 指示该字段相对对象内存地址的偏移，var4 指示操作需要加的数值，这里为 1。通过 getIntVolatile(var1, var2) 得到旧的预期值，通过调用 compareAndSwapInt() 来进行 CAS 比较，如果该字段内存地址中的值等于 var5，那么就更新内存地址为 var1+var2 的变量为 var5+var4。
+
+可以看到 getAndAddInt() 在一个循环中进行，发生冲突的做法是不断的进行重试。
+
+```java
+public final int getAndAddInt(Object var1, long var2, int var4) {
+    int var5;
+    do {
+        var5 = this.getIntVolatile(var1, var2);
+    } while(!this.compareAndSwapInt(var1, var2, var5, var5 + var4));
+
+    return var5;
+}  
+```
+
+**(三)ABA**
+
+如果一个变量初次读取的时候是 A 值，它的值被改成了 B，后来又被改回为 A，那 CAS 操作就会误认为它从来没有被改变过。
+
+J.U.C 包提供了一个带有标记的原子引用类 AtomicStampedReference 来解决这个问题，它可以通过控制变量值的版本来保证 CAS 的正确性。大部分情况下 ABA 问题不会影响程序并发的正确性，如果需要解决 ABA 问题，改用传统的互斥同步可能会比原子类更高效。
+
+CAS, Unsafe和原子类详细分析请看：
+
+### 无同步方案
+
+**线程本地存储(Thread Local Storage)**
+
+如果一段代码中所需要的数据必须与其他代码共享，那就看看这些共享数据的代码是否能保证在同一个线程中执行。如果能保证，我们就可以把共享数据的可见范围限制在同一个线程之内，这样，无须同步也能保证线程之间不出现数据争用的问题。
+
+符合这种特点的应用并不少见，大部分使用消费队列的架构模式(如“生产者-消费者”模式)都会将产品的消费过程尽量在一个线程中消费完。其中最重要的一个应用实例就是经典 Web 交互模型中的“一个请求对应一个服务器线程”(Thread-per-Request)的处理方式，这种处理方式的广泛应用使得很多 Web 服务端应用都可以使用线程本地存储来解决线程安全问题。
+
+可以使用 java.lang.ThreadLocal 类来实现线程本地存储功能。
+
+对于以下代码，thread1 中设置 threadLocal 为 1，而 thread2 设置 threadLocal 为 2。过了一段时间之后，thread1 读取 threadLocal 依然是 1，不受 thread2 的影响。
+
+```java
+public class ThreadLocalExample {
+    public static void main(String[] args) {
+        ThreadLocal threadLocal = new ThreadLocal();
+        Thread thread1 = new Thread(() -> {
+            threadLocal.set(1);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(threadLocal.get());
+            threadLocal.remove();
+        });
+        Thread thread2 = new Thread(() -> {
+            threadLocal.set(2);
+            threadLocal.remove();
+        });
+        thread1.start();
+        thread2.start();
+    }
+}
+
+ // 输出为1
+```
+
+
+

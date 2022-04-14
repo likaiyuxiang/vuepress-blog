@@ -3,6 +3,7 @@ module.exports = {
     description: '如逆旅，似行人',
     dest: './dist',
     port: '7777',
+	palette:'./styles/palette.styl', //palette.style就是styles里边的文件，此文件就是写的自定义主题样式
     head: [
         ['link', {rel: 'icon', href: '/image/logo.jpg'}]
     ],
