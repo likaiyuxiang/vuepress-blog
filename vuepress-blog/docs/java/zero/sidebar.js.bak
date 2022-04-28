@@ -25,8 +25,28 @@ module.exports =[
                   title:'线程池',
                   collapsable: true,
                   children:[
-                    '/java/zero/notes/three',
+                    '/java/zero/notes/four',
                   ]
                 },
-            	
+            		     {
+                  title:'UML',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/uml',
+                  ]
+                },
+					       {
+                  title:'AQS',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/AQS',
+                  ]
+                },
+					         {
+                  title:'LOck',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/LockSupport',
+                  ]
+                },
 ]

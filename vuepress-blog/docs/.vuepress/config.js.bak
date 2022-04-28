@@ -1,9 +1,23 @@
 module.exports = {
     title: '雨巷',
+	 plugins: [
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    }],
+	['@vuepress/back-to-top'],
+	[
+      "@vuepress/active-header-links",
+      {
+        sidebarLinkSelector: ".sidebar-link",
+        headerAnchorSelector: ".header-anchor",
+      },
+     ],
+	 ["@vuepress/nprogress"],
+    ],
     description: '如逆旅，似行人',
     dest: './dist',
     port: '7777',
-	palette: path.resolve(__dirname,'./styles','palette.styl'), //palette.style就是styles里边的文件，此文件就是写的自定义主题样式
+	palette:'./styles/palette.styl', //palette.style就是styles里边的文件，此文件就是写的自定义主题样式
     head: [
         ['link', {rel: 'icon', href: '/image/logo.jpg'}]
     ],
@@ -24,5 +38,5 @@ module.exports = {
         },
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页 ！'
-    }
+    },
 }

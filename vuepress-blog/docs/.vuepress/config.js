@@ -1,5 +1,25 @@
 module.exports = {
     title: '雨巷',
+	 plugins: [
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    }],
+	['@vuepress/back-to-top'],
+	[
+      "@vuepress/active-header-links",
+      {
+        sidebarLinkSelector: ".sidebar-link",
+        headerAnchorSelector: ".header-anchor",
+      },
+     ],
+	 ["@vuepress/nprogress"],
+	[
+    '@vuepress-reco/vuepress-plugin-kan-ban-niang',
+    {
+      theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16']
+    }
+    ],
+    ],
     description: '如逆旅，似行人',
     dest: './dist',
     port: '7777',
@@ -24,5 +44,5 @@ module.exports = {
         },
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页 ！'
-    }
+    },
 }

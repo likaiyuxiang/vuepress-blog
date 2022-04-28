@@ -28,5 +28,39 @@ module.exports =[
                     '/java/zero/notes/four',
                   ]
                 },
-            	
+            		     {
+                  title:'UML',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/uml',
+                  ]
+                },
+					       {
+                  title:'AQS',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/AQS',
+                  ]
+                },
+					         {
+                  title:'Lock',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/LockSupport',
+                  ]
+                },
+					           {
+                  title:'GC',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/GC',
+                  ]
+                },
+					  	           {
+                  title:'JVM',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/jvm',
+                  ]
+                },
 ]
