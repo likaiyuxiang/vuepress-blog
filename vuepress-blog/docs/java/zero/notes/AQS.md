@@ -1,6 +1,6 @@
 # AQS
 
-- 什么是AQS? 为什么它是核心?？
+- 什么是AQS? 为什么它是核心?
 - AQS的核心思想是什么? 它是怎么实现的? 底层数据结构等
 - AQS有哪些核心的方法?
 - AQS定义什么样的资源获取方式? AQS定义了两种资源获取方式：`独占`(只有一个线程能访问执行，又根据是否按队列的顺序分为`公平锁`和`非公平锁`，如`ReentrantLock`) 和`共享`(多个线程可同时访问执行，如`Semaphore`、`CountDownLatch`、 `CyclicBarrier` )。`ReentrantReadWriteLock`可以看成是组合式，允许多个线程同时对某一资源进行读。
