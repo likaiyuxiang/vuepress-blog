@@ -1,3 +1,13 @@
+---
+title: POJO
+date: 2022-04-24
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - 结构
+---
+
 # POJO、DO、DTO、VO
 
 | 对象                             | 含义         | 作用                                            | 作用范围                        |

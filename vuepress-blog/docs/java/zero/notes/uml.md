@@ -1,3 +1,13 @@
+---
+title: uml类图
+date: 2022-04-20
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - uml
+---
+
 # uml类图
 
 ## 类图中具体类、抽象、接口和包的表示法

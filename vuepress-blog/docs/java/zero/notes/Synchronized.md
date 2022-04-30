@@ -1,3 +1,14 @@
+---
+title: Synchronized
+date: 2022-04-21
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java	
+ - 锁
+---
+
 # Synchronized
 
 - Synchronized可以作用在哪里? 分别通过对象锁和类锁进行举例。

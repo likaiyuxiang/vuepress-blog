@@ -1,3 +1,12 @@
+---
+title: GIT
+date: 2022-04-08
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - git
+---
 
 # git常用操作
 

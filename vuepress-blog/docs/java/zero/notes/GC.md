@@ -1,3 +1,13 @@
+---
+title: 垃圾回收
+date: 2022-04-20
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java
+---
+
 # GC
 
 ## 判断一个对象是否可被回收

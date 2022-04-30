@@ -1,3 +1,13 @@
+---
+title: LockSupport
+date: 2022-04-15
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java
+---
+
 # LockSupport类
 
 - 为什么LockSupport也是核心基础类? AQS框架借助于两个类：Unsafe(提供CAS操作)和LockSupport(提供park/unpark操作)

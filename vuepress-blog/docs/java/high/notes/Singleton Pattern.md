@@ -1,3 +1,14 @@
+---
+title: 单例模式
+date: 2022-04-24
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java
+ - 设计模式
+---
+
 # 单例模式
 
 ## 单例模式的几种实现方式

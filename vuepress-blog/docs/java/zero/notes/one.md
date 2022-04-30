@@ -1,3 +1,13 @@
+---
+title: java泛型
+date: 2022-04-10
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java
+---
+
 # java泛型
 
 源：[https://pdai.tech/md/java/basic/java-basic-x-generic.html](https://pdai.tech/md/java/basic/java-basic-x-generic.html)

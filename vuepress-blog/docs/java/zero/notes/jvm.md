@@ -1,3 +1,13 @@
+---
+title: JVM内存模型
+date: 2022-04-20
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java
+---
+
 # JVM内存模型
 
 ## MM引入

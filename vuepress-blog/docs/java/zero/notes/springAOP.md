@@ -1,3 +1,14 @@
+---
+title: AOP
+date: 2022-04-20
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java	
+ - spring
+---
+
 # spring-aop
 
 ## AOP是什么

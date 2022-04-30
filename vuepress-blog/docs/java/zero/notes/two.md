@@ -1,3 +1,13 @@
+---
+title: Java并发
+date: 2022-04-10
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java
+---
+
 # Java并发知识
 
 一个简单的线程不安全例子

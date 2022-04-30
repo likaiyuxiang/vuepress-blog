@@ -1,3 +1,15 @@
+---
+title: 线程池
+date: 2022-04-29
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java
+---
+
+
+
 # ThreadPoolExecutor--线程池
 
 为什么要有线程池?

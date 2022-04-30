@@ -1,3 +1,13 @@
+---
+title: java线程
+date: 2022-04-10
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java
+---
+
 # java线程知识
 
 ## 线程的状态

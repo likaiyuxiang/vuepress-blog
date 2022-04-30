@@ -1,3 +1,14 @@
+---
+title: IOC
+date: 2022-04-20
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java	
+ - spring
+---
+
 # spring的IOC（**Inversion of Control**）控制翻转
 
 ## 依赖注入的三种方式
