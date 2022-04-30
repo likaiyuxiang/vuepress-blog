@@ -1,3 +1,13 @@
+---
+title: AQS
+date: 2022-04-29
+sidebar: 'auto'
+categories:
+ - frontEnd
+tags:
+ - java
+---
+
 # AQS
 
 - 什么是AQS? 为什么它是核心?

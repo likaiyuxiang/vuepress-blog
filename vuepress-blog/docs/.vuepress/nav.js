@@ -37,5 +37,6 @@ module.exports = [
 				]
             }
         ]
-    }
+    },
+	{ text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
 ]

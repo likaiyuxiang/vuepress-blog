@@ -1,4 +1,5 @@
 module.exports = {
+	theme: 'reco',
     title: '雨巷',
 	 plugins: [
     ['@vuepress/search', {
@@ -42,6 +43,18 @@ module.exports = {
                 buttonText: '更新'
             }
         },
+	record: '湘ICP备2021018046号',
+    recordLink: 'https://beian.miit.gov.cn/#/Integrated/recordQuery',
+    // 项目开始时间，只填写年份
+    startYear: '2022',
+	 category: {
+        location: 2,     // 在导航栏菜单中所占的位置，默认2
+        text: 'Category' // 默认文案 “分类”
+      },
+      tag: {
+        location: 3,     // 在导航栏菜单中所占的位置，默认3
+        text: 'Tag'      // 默认文案 “标签”
+      },
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页 ！'
     },
