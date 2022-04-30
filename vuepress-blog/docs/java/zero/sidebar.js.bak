@@ -43,10 +43,24 @@ module.exports =[
                   ]
                 },
 					         {
-                  title:'LOck',
+                  title:'Lock',
                   collapsable: true,
                   children:[
                     '/java/zero/notes/LockSupport',
+                  ]
+                },
+					           {
+                  title:'GC',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/GC',
+                  ]
+                },
+					  	           {
+                  title:'JVM',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/jvm',
                   ]
                 },
 ]
