@@ -63,4 +63,18 @@ module.exports =[
                     '/java/zero/notes/jvm',
                   ]
                 },
+					   	           {
+                  title:'springaop',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/springAOP',
+                  ]
+                },
+					     	           {
+                  title:'springIOC',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/springIOC',
+                  ]
+                },
 ]

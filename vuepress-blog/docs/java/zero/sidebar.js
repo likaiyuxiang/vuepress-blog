@@ -77,4 +77,11 @@ module.exports =[
                     '/java/zero/notes/springIOC',
                   ]
                 },
+					       	           {
+                  title:'spirngboot',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/spirngboot',
+                  ]
+                },
 ]
