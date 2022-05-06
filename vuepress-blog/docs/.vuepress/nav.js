@@ -13,15 +13,17 @@ module.exports = [
             {text: '中高进阶篇', link: '/java/high/'},
         ]
     },
+	{
+		text: '前端知识', link: '/qianduan/',
+		items: [
+            {text: '前端小知识', link: '/qianduan/one/'},
+        ]
+    },
+
+
     {
         text: '工具箱',
         items: [
-			{
-                text: '在线编辑',
-				items: [
-					{text: '图片压缩', link: 'https://tinypng.com/'}
-				]
-            },
 			{
                 text: '在线服务',
 				items: [
@@ -32,7 +34,6 @@ module.exports = [
 			{
                 text: '博客指南',
 				items: [
-					{text: '掘金', link: 'https://juejin.im/'},
 					{text: 'CSDN', link: 'https://blog.csdn.net/'}
 				]
             }

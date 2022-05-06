@@ -3,4 +3,5 @@ module.exports = {
 	'/guide/vuepress': require('../guide/vuepress/sidebar'),
 	'/java/zero': require('../java/zero/sidebar'),
 	'/java/high': require('../java/high/sidebar'),
+	'/qianduan/one': require('../qianduan/one/sidebar'),
 }	

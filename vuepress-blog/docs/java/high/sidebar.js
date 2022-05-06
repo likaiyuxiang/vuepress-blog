@@ -28,5 +28,19 @@ module.exports =[
                     '/java/high/notes/POJO',
                   ]
                 },
+					   {
+                  title:'MyBatis',
+                  collapsable: true,
+                  children:[
+                    '/java/high/notes/MyBatis',
+                  ]
+                },
+					   {
+                  title:'MyBatis1',
+                  collapsable: true,
+                  children:[
+                    '/java/high/notes/MyBatis1',
+                  ]
+                },
             	
 ]
