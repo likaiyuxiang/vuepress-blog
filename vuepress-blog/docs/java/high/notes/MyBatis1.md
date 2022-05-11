@@ -1,6 +1,7 @@
 ---
 title: MyBatis-1
 date: 2022-05-06
+sidebar: 'auto'
 categories:
  - frontEnd
 tags:

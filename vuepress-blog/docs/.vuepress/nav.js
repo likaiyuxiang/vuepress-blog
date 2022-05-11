@@ -19,6 +19,18 @@ module.exports = [
             {text: '前端小知识', link: '/qianduan/one/'},
         ]
     },
+			{
+		text: '网络知识', link: '/wangluo/',
+		items: [
+            {text: '用户管理', link: '/wangluo/one/'},
+        ]
+    },
+					{
+		text: '数据知识', link: '/shuju/',
+		items: [
+            {text: '数据库', link: '/shuju/one/'},
+        ]
+    },
 
 
     {
