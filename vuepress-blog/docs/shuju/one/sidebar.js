@@ -1,7 +1,7 @@
 module.exports =[ 
    
             {
-                  title:'cookie、session与token',
+                  title:'mysql1',
                   collapsable: true,
                   children:[
                     '/shuju/one/notes/mysql1',
