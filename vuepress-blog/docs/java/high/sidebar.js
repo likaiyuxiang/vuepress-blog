@@ -42,5 +42,26 @@ module.exports =[
                     '/java/high/notes/MyBatis1',
                   ]
                 },
+					  {
+                  title:'MyBatis2',
+                  collapsable: true,
+                  children:[
+                    '/java/high/notes/MyBatis1',
+                  ]
+                },
+					  {
+                  title:'MyBatis3',
+                  collapsable: true,
+                  children:[
+                    '/java/high/notes/MyBatis1',
+                  ]
+                },
+					  {
+                  title:'MyBatis4',
+                  collapsable: true,
+                  children:[
+                    '/java/high/notes/MyBatis1',
+                  ]
+                },
             	
 ]
