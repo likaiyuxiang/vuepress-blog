@@ -46,21 +46,21 @@ module.exports =[
                   title:'MyBatis2',
                   collapsable: true,
                   children:[
-                    '/java/high/notes/MyBatis1',
+                    '/java/high/notes/MyBatis2',
                   ]
                 },
 					  {
                   title:'MyBatis3',
                   collapsable: true,
                   children:[
-                    '/java/high/notes/MyBatis1',
+                    '/java/high/notes/MyBatis3',
                   ]
                 },
 					  {
                   title:'MyBatis4',
                   collapsable: true,
                   children:[
-                    '/java/high/notes/MyBatis1',
+                    '/java/high/notes/MyBatis4',
                   ]
                 },
             	
