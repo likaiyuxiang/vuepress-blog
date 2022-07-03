@@ -11,6 +11,7 @@ module.exports = [
 		items: [
             {text: '初级开发篇', link: '/java/zero/'},
             {text: '中高进阶篇', link: '/java/high/'},
+			{text: '工具', link: '/java/tool/'},
         ]
     },
 	{

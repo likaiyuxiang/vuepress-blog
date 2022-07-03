@@ -14,6 +14,12 @@ module.exports = [
 			{text: '工具', link: '/java/tool/'},
         ]
     },
+			{
+		text: '开发知识', link: '/kaifa/',
+		items: [
+            {text: '开发相关知识', link: '/kaifa/one/'},
+        ]
+    },
 	{
 		text: '前端知识', link: '/qianduan/',
 		items: [
