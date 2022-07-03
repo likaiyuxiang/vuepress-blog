@@ -5,6 +5,7 @@ module.exports = {
 	'/java/high': require('../java/high/sidebar'),
 	'/java/tool': require('../java/tool/sidebar'),
 	'/qianduan/one': require('../qianduan/one/sidebar'),
+	'/kaifa/one': require('../qianduan/one/sidebar'),
 	'/wangluo/one': require('../wangluo/one/sidebar'),
 	'/shuju/one': require('../shuju/one/sidebar'),
 }	
