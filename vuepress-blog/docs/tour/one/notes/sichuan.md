@@ -1,5 +1,5 @@
 ---
-四川旅游安排
+title: sichuan
 date: 2022-07-18
 sidebar: 'auto'
 categories:
@@ -19,7 +19,7 @@ tags:
 
 ![4](../../../.vuepress/public/image/sichuan2.png)
 
-![4](../../../.vuepress/public/image/sichuan3.jpeg)
+![](../../../.vuepress/public/image/sichuan3.jpeg)
 
 ## 景点
 

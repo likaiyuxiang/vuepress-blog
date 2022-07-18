@@ -1,10 +1,10 @@
 module.exports =[ 
    
             {
-                  title:'cookie、session与token',
+                  title:'川西攻略',
                   collapsable: true,
                   children:[
-                    '/wangluo/one/notes/token',
+                    '/tour/one/notes/sichuan',
                   ]
                 },
 				
