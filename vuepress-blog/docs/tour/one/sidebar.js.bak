@@ -1,11 +1,17 @@
 module.exports =[ 
    
             {
-                  title:'川西攻略',
+                  title:'sichuan',
                   collapsable: true,
                   children:[
                     '/tour/one/notes/sichuan',
                   ]
                 },
-				
+				 {
+                  title:'cookie、session与token',
+                  collapsable: true,
+                  children:[
+                    '/tour/one/notes/token',
+                  ]
+                },
 ]
