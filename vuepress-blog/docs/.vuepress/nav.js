@@ -38,6 +38,12 @@ module.exports = [
             {text: '数据库', link: '/shuju/one/'},
         ]
     },
+								{
+		text: '生活', link: '/tour/',
+		items: [
+            {text: '旅游', link: '/tour/one/'},
+        ]
+    },
 
 
     {
