@@ -1,10 +1,10 @@
 module.exports =[ 
    
             {
-                  title:'sichuan',
+                  title:'cook',
                   collapsable: true,
                   children:[
-                    '/tour/one/notes/sichuan',
+                    '/shenghuo/cook/notes/tiaoliao',
                   ]
                 },
 

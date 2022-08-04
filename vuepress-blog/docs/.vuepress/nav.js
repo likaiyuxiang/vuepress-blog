@@ -39,9 +39,10 @@ module.exports = [
         ]
     },
 								{
-		text: '生活', link: '/tour/',
+		text: '生活', link: '/shenghuo/',
 		items: [
-            {text: '旅游', link: '/tour/one/'},
+            {text: '做饭', link: '/shenghuo/cook/'},
+			{text: '旅游', link: '/shenghuo/one/'},
         ]
     },
 

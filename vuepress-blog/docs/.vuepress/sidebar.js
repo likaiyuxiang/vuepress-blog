@@ -17,6 +17,10 @@ module.exports = {
 
 	'/shuju/one': require('../shuju/one/sidebar'),
 
-	'/tour/one': require('../tour/one/sidebar'),
+	'/shenghuo/cook': require('../shenghuo/cook/sidebar'),
+
+	'/shenghuo/one': require('../shenghuo/one/sidebar'),
+
+
 
 }	

@@ -1,12 +1,11 @@
 ---
-title: sichuan
+title: 四川攻略
 date: 2022-07-18
 sidebar: 'auto'
 categories:
  - frontEnd
 tags:
  - tour
-
 ---
 
 # 四川旅游安排
