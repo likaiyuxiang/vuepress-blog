@@ -40,6 +40,14 @@ module.exports =[
                   collapsable: true,
                   children:[
                     '/shuju/one/notes/mysql锁',
+					'/shuju/one/notes/mysql锁-2',
+                  ]
+                },
+			      {
+                  title:'mysql索引',
+                  collapsable: true,
+                  children:[
+                    '/shuju/one/notes/mysql三种日志',
                   ]
                 },
 				
