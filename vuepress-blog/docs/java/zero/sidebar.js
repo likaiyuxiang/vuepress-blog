@@ -1,4 +1,11 @@
 module.exports =[ 
+  	           {
+                  title:'Annotation',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/Annotation',
+                  ]
+                },
    
             {
                   title:'java小知识',
@@ -7,6 +14,14 @@ module.exports =[
                     '/java/zero/notes/one',
                   ]
                 },
+					   {
+                  title:'Annotation',
+                  collapsable: true,
+                  children:[
+                    '/java/zero/notes/Annotation',
+                  ]
+                },
+
 					  {
                   title:'java并发',
                   collapsable: true,

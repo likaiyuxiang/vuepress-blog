@@ -63,5 +63,12 @@ module.exports =[
                     '/java/high/notes/MyBatis4',
                   ]
                 },
+					   {
+                  title:'CompletableFuture',
+                  collapsable: true,
+                  children:[
+                    '/java/high/notes/CompletableFuture',
+                  ]
+                },
             	
 ]

@@ -1,10 +1,17 @@
 module.exports =[ 
    
             {
-                  title:'cookie、session与token',
+                  title:'mysqll事务',
                   collapsable: true,
                   children:[
-                    '/shuju/one/notes/mysql1',
+                    '/shuju/one/notes/mysqll事务',
+                  ]
+                },
+					  {
+                  title:'mysql查询优化',
+                  collapsable: true,
+                  children:[
+                    '/shuju/one/notes/mysql查询优化',
                   ]
                 },
 				
