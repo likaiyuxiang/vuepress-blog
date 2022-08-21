@@ -1,5 +1,5 @@
 ---
-title: MYSQL三种日志
+title: MYSQL锁-2
 date: 2022-08-21
 sidebar: 'auto'
 categories:

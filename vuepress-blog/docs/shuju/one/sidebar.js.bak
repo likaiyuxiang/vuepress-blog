@@ -43,5 +43,12 @@ module.exports =[
 					'/shuju/one/notes/mysql锁-2',
                   ]
                 },
+			      {
+                  title:'mysql三种日志',
+                  collapsable: true,
+                  children:[
+                    '/shuju/one/notes/mysql三种日志',
+                  ]
+                },
 				
 ]
