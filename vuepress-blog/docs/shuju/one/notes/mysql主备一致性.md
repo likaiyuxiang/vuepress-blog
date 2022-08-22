@@ -1,5 +1,5 @@
 ---
-title: MYSQL主从一致性
+title: MYSQL主备一致性
 date: 2022-08-21
 sidebar: 'auto'
 categories:
@@ -9,9 +9,9 @@ tags:
  - mysql锁
 ---
 
-# mysql主从一致性
+# mysql主备一致性
 
-## mysql主从切换
+## mysql主备切换
 
 如图1所示就是基本的主备切换流程。
 
