@@ -21,6 +21,11 @@ module.exports = {
 
 	'/shenghuo/one': require('../shenghuo/one/sidebar'),
 
+	'/shenghuo/two': require('../shenghuo/two/sidebar'),
+
+	'/shenghuo/three': require('../shenghuo/three/sidebar'),
+
+	'/shenghuo/中间件': require('../shenghuo/中间件/sidebar'),
 
 
 }	

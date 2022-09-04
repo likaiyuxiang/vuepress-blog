@@ -7,6 +7,13 @@ module.exports =[
                     '/shuju/one/notes/mysqll事务',
                   ]
                 },
+					  			      {
+                  title:'mysql三种日志',
+                  collapsable: true,
+                  children:[
+                    '/shuju/one/notes/mysql三种日志',
+                  ]
+                },
 					  {
                   title:'mysql查询优化',
                   collapsable: true,
@@ -43,12 +50,6 @@ module.exports =[
 					'/shuju/one/notes/mysql锁-2',
                   ]
                 },
-			      {
-                  title:'mysql三种日志',
-                  collapsable: true,
-                  children:[
-                    '/shuju/one/notes/mysql三种日志',
-                  ]
-                },
+
 				
 ]
