@@ -69,8 +69,3 @@ tags:
 - 文档（document）
 
   可搜索的最小单元 ，json格式保存
-
-
-
-![adp](../../../.vuepress/public/image/es1-1.png)
-

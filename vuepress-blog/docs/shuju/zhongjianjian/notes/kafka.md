@@ -1,6 +1,6 @@
 ---
-title: Redis
-date: 2022-09-05
+title: Kafka
+date: 2022-09-06
 sidebar: 'auto'
 categories:
  - frontEnd
