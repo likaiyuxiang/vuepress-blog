@@ -3,29 +3,33 @@ module.exports = {
 
 	'/guide/vuepress': require('../guide/vuepress/sidebar'),
 
+
 	'/java/zero': require('../java/zero/sidebar'),
 
 	'/java/high': require('../java/high/sidebar'),
 
 	'/java/tool': require('../java/tool/sidebar'),
 
+
 	'/qianduan/one': require('../qianduan/one/sidebar'),
+
 
 	'/kaifa/one': require('../kaifa/one/sidebar'),
 
+
 	'/wangluo/one': require('../wangluo/one/sidebar'),
+
 
 	'/shuju/one': require('../shuju/one/sidebar'),
 
-	'/shenghuo/cook': require('../shenghuo/cook/sidebar'),
+	'/shuju/two': require('../shuju/two/sidebar'),
+
+	'/shuju/three': require('../shuju/three/sidebar'),
+
+	'/shuju/zhongjianjian': require('../shuju/zhongjianjian/sidebar'),
+
 
 	'/shenghuo/one': require('../shenghuo/one/sidebar'),
 
-	'/shenghuo/two': require('../shenghuo/two/sidebar'),
-
-	'/shenghuo/three': require('../shenghuo/three/sidebar'),
-
-	'/shenghuo/中间件': require('../shenghuo/中间件/sidebar'),
-
-
+	'/shenghuo/cook': require('../shenghuo/cook/sidebar'),
 }	

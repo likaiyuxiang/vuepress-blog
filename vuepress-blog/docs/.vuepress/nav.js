@@ -36,6 +36,9 @@ module.exports = [
 		text: '数据知识', link: '/shuju/',
 		items: [
             {text: '数据库', link: '/shuju/one/'},
+			{text: 'ES', link: '/shuju/two/'},
+			{text: 'Redis', link: '/shuju/three/'},
+			{text: '中间件', link: '/shuju/zhongjianjian/'},
         ]
     },
 								{
