@@ -1,5 +1,0 @@
-response:{"code":0,"data":
-{"list":
-[{"id":296,"applyPriceNo":"NTJ202208250189","reviewer":"系统审批","reviewDate":1661415393291,"effectiveType":1,"effectiveDate":0,"creator":"suliangyi","createDate":1661415393291,"status":5,"total":1,"passNum":0,"unPassNum":0,"effectiveNum":1,"unEffectiveNum":0,"applySourceType":0}
-,{"id":295,"applyPriceNo":"NTJ202208250188","reviewer":"","reviewDate":0,"effectiveType":1,"effectiveDate":0,"creator":"suliangyi","createDate":1661415044926,"status":1,"total":1,"passNum":1,"unPassNum":0,"effectiveNum":0,"unEffectiveNum":0,"applySourceType":0}]
-,"total":2},"success":true}
